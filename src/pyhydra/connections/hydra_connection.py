@@ -7,7 +7,7 @@ from typing import Any, Dict, Optional
 from pyee import EventEmitter
 from websocket import ABNF, WebSocketApp, WebSocketException
 
-from hydrano.types import HydraStatus, hydra_status
+from pyhydra.types import HydraStatus, hydra_status
 
 
 class HydraConnection:

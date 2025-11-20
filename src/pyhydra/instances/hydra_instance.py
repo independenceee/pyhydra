@@ -2,10 +2,10 @@ from typing import Any, List
 
 from pycardano import UTxO
 
-from hydrano.interfaces import IFetcher, ISubmitter
-from hydrano.providers import HydraProvider
-from hydrano.types import HydraTransaction, HydraUTxO, hydra_utxo
-from hydrano.utils import parse_error
+from pyhydra.interfaces import IFetcher, ISubmitter
+from pyhydra.providers import HydraProvider
+from pyhydra.types import HydraTransaction, HydraUTxO, hydra_utxo
+from pyhydra.utils import parse_error
 
 
 class HydraInstance:

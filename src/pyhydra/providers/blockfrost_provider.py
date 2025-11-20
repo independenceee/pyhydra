@@ -16,8 +16,8 @@ from pycardano import (
     Value,
 )
 
-from hydrano.interfaces import IFetcher, ISubmitter
-from hydrano.types import BlockfrostAmount, BlockfrostOutput, BlockfrostTransaction
+from pyhydra.interfaces import IFetcher, ISubmitter
+from pyhydra.types import BlockfrostAmount, BlockfrostOutput, BlockfrostTransaction
 
 
 class BlockfrostProvider(IFetcher, ISubmitter, BlockFrostChainContext):

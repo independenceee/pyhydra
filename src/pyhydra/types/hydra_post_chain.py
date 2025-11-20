@@ -1,8 +1,8 @@
 from dataclasses import dataclass
 from typing import Dict, List, Union
 
-from hydrano.types.hydra_type import HydraHeadParameters, HydraSnapshot
-from hydrano.types.hydra_utxos import HydraUTxO
+from pyhydra.types.hydra_type import HydraHeadParameters, HydraSnapshot
+from pyhydra.types.hydra_utxos import HydraUTxO
 
 @dataclass
 class InitTx:

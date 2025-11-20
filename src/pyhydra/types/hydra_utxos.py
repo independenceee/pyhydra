@@ -10,12 +10,12 @@ from pycardano import (
     datum_hash,
 )
 
-from hydrano.types.hydra_assets import HydraAssets, hydra_assets, to_assets
-from hydrano.types.hydra_reference_script import (
+from pyhydra.types.hydra_assets import HydraAssets, hydra_assets, to_assets
+from pyhydra.types.hydra_reference_script import (
     HydraReferenceScript,
     hydra_reference_script,
 )
-from hydrano.utils.datum import parse_datum_cbor
+from pyhydra.utils.datum import parse_datum_cbor
 
 
 @dataclass
