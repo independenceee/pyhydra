@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import List
 
-from pyhydra.types.hydra_utxos import HydraUTxOs
+from pyhydra.models.utxos import HydraUTxOs
 
 
 @dataclass

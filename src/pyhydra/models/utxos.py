@@ -10,8 +10,8 @@ from pycardano import (
     datum_hash,
 )
 
-from pyhydra.types.hydra_assets import HydraAssets, hydra_assets, to_assets
-from pyhydra.types.hydra_reference_script import (
+from pyhydra.models.assets import HydraAssets, hydra_assets, to_assets
+from pyhydra.models.hydra_reference_script import (
     HydraReferenceScript,
     hydra_reference_script,
 )

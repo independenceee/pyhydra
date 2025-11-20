@@ -8,10 +8,10 @@ from pycardano import ProtocolParameters, UTxO
 from pyee.asyncio import AsyncIOEventEmitter
 
 from pyhydra.connections.hydra_connection import HydraConnection
-from pyhydra.types.hydra_status import HydraStatus, hydra_status
-from pyhydra.types.hydra_transaction import HydraTransaction
-from pyhydra.types.hydra_utxos import HydraUTxO, to_utxo
-from pyhydra.utils.parse_error import parse_error
+from pyhydra.models.hydra_status import HydraStatus, hydra_status
+from pyhydra.models.hydra_transaction import HydraTransaction
+from pyhydra.models.utxos import HydraUTxO, to_utxo
+from pyhydra.utils.errors import parse_error
 
 
 class HydraProvider:

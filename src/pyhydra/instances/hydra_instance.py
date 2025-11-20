@@ -4,8 +4,8 @@ from pycardano import UTxO
 
 from pyhydra.interfaces import IFetcher, ISubmitter
 from pyhydra.providers import HydraProvider
-from pyhydra.types import HydraTransaction, HydraUTxO, hydra_utxo
-from pyhydra.utils import parse_error
+from pyhydra.models import HydraTransaction, HydraUTxO, hydra_utxo
+from pyhydra.utils import errors
 
 
 class HydraInstance:
@@ -63,7 +63,7 @@ class HydraInstance:
         """
         utxos: List[UTxO] = self.fetcher.fetch_utxos(transaction_id=transaction_id, index=index)
         if not utxos:
-            raise parse_error(Exception("UTxO not found!"))
+            raise errors(Exception("UTxO not found!"))
         utxo = utxos[0]
         print(utxo)
         # value = hydra_utxo(utxo=utxo)

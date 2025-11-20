@@ -1,10 +1,10 @@
 from dataclasses import dataclass
 from typing import Dict, List, Optional, Union
 
-from pyhydra.types.hydra_post_chain import PostChainTx
-from pyhydra.types.hydra_transaction import HydraTransaction
-from pyhydra.types.hydra_type import HydraParty, HydraSnapshot
-from pyhydra.types.hydra_utxos import HydraUTxOs
+from pyhydra.models.hydra_post_chain import PostChainTx
+from pyhydra.models.hydra_transaction import HydraTransaction
+from pyhydra.models.hydra_type import HydraParty, HydraSnapshot
+from pyhydra.models.utxos import HydraUTxOs
 
 
 @dataclass
