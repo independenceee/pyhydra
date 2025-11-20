@@ -2,7 +2,7 @@
 
 <img src="https://hydra.family/head-protocol/img/hydra.png" width="120" alt="Hydra Logo" />
 
-# **Hydrano**
+# **PyHydra**
 
 **A Lightweight Python Toolkit for Cardano Hydra**
 
@@ -14,9 +14,9 @@
 
 </div>
 
-## About Hydrano
+## About PyHydra
 
-Hydrano is an open-source Python toolkit designed to simplify interaction with **Cardano Hydra**, the Layer-2 scaling solution for the Cardano blockchain. Built for developers, Hydrano provides a lightweight, Pythonic interface to create, manage, and interact with Hydra Heads—state channels that enable fast, low-cost, and scalable off-chain transactions while maintaining Cardano's Layer-1 security guarantees. With minimal dependencies and a focus on simplicity, Hydrano is ideal for integrating Hydra functionality into Python-based projects, such as payment systems, gaming platforms, or DeFi applications.
+PyHydra is an open-source Python toolkit designed to simplify interaction with **Cardano Hydra**, the Layer-2 scaling solution for the Cardano blockchain. Built for developers, PyHydra provides a lightweight, Pythonic interface to create, manage, and interact with Hydra Heads—state channels that enable fast, low-cost, and scalable off-chain transactions while maintaining Cardano's Layer-1 security guarantees. With minimal dependencies and a focus on simplicity, PyHydra is ideal for integrating Hydra functionality into Python-based projects, such as payment systems, gaming platforms, or DeFi applications.
 
 ### Key Benefits
 
@@ -37,7 +37,7 @@ Hydrano is an open-source Python toolkit designed to simplify interaction with *
 
 ## 🌐 Features
 
-Hydrano offers a streamlined set of tools to interact with Cardano Hydra, focusing on simplicity and performance:
+PyHydra offers a streamlined set of tools to interact with Cardano Hydra, focusing on simplicity and performance:
 
 - **Hydra Head Management**: Create, join, and close Hydra Heads with minimal code.
 - **Off-Chain Transactions**: Submit and validate transactions within Hydra state channels for near-instant processing (<1s latency).
@@ -61,13 +61,13 @@ Hydrano offers a streamlined set of tools to interact with Cardano Hydra, focusi
 
 ## ⚡ Getting Started
 
-Follow these steps to set up Hydrano and start building with Cardano Hydra. Prerequisites: Python 3.8+, a running Hydra node, and access to Cardano testnet ADA (available via the [Cardano faucet](https://docs.cardano.org/cardano-testnet/faucet)).
+Follow these steps to set up PyHydra and start building with Cardano Hydra. Prerequisites: Python 3.8+, a running Hydra node, and access to Cardano testnet ADA (available via the [Cardano faucet](https://docs.cardano.org/cardano-testnet/faucet)).
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/independenceee/hydrano.git
-cd hydrano
+git clone https://github.com/independenceee/PyHydra.git
+cd PyHydra
 ```
 
 ### 2. Install Dependencies
@@ -111,27 +111,27 @@ pytest tests/
 
 ## 📦 Pip Installation
 
-Hydrano can be installed as a Python package via Pip, making it easy to integrate into your projects without cloning the repository. The package is designed to be lightweight and compatible with standard Python workflows.
+PyHydra can be installed as a Python package via Pip, making it easy to integrate into your projects without cloning the repository. The package is designed to be lightweight and compatible with standard Python workflows.
 
-### Installing Hydrano via Pip
+### Installing PyHydra via Pip
 
-If Hydrano is published to PyPI, you can install it directly:
+If PyHydra is published to PyPI, you can install it directly:
 
 ```bash
-pip install hydrano
+pip install PyHydra
 ```
 
-_Note_: As of September 2025, Hydrano may not yet be available on PyPI. Check [PyPI](https://pypi.org/project/hydrano/) for the latest status or follow the steps below to install from source.
+_Note_: As of September 2025, PyHydra may not yet be available on PyPI. Check [PyPI](https://pypi.org/project/PyHydra/) for the latest status or follow the steps below to install from source.
 
 ### Installing from Source
 
-To install Hydrano as a package from the repository:
+To install PyHydra as a package from the repository:
 
 1. Clone the repository (if not already done):
 
    ```bash
-   git clone https://github.com/independenceee/hydrano.git
-   cd hydrano
+   git clone https://github.com/independenceee/PyHydra.git
+   cd PyHydra
    ```
 
 2. Install the package locally:
@@ -140,7 +140,7 @@ To install Hydrano as a package from the repository:
    pip install .
    ```
 
-   This installs Hydrano into your Python environment, making it available as a module (`import hydrano`).
+   This installs PyHydra into your Python environment, making it available as a module (`import PyHydra`).
 
 ### Building the Package
 
@@ -163,12 +163,12 @@ To create a distributable package (e.g., for sharing or publishing to PyPI):
 3. Install the built package locally (optional):
 
    ```bash
-   pip install dist/hydrano-*.whl
+   pip install dist/PyHydra-*.whl
    ```
 
 ### Publishing to PyPI (For Maintainers)
 
-If you are the project maintainer and wish to publish Hydrano to PyPI:
+If you are the project maintainer and wish to publish PyHydra to PyPI:
 
 1. Ensure you have a PyPI account and `twine` installed:
 
@@ -186,10 +186,10 @@ If you are the project maintainer and wish to publish Hydrano to PyPI:
 
 ### Usage Example with Pip
 
-After installing via Pip, you can use Hydrano in your Python projects:
+After installing via Pip, you can use PyHydra in your Python projects:
 
 ```python
-from hydrano import HydraClient
+from PyHydra import HydraClient
 
 # Initialize a Hydra client
 client = HydraClient(node_url="ws://localhost:4000")
@@ -210,9 +210,9 @@ print(f"Transaction {tx_id} submitted to head {head_id}")
 
 ## 📁 Project Structure
 
-Hydrano follows a clean, modular structure for maintainability:
+PyHydra follows a clean, modular structure for maintainability:
 
-- **`src/hydrano/`** — Core toolkit code
+- **`src/PyHydra/`** — Core toolkit code
   - `client.py`: Main HydraClient class for node interactions.
   - `head.py`: Utilities for creating and managing Hydra Heads.
   - `transaction.py`: Functions for building and submitting off-chain transactions.
@@ -235,10 +235,10 @@ Hydrano follows a clean, modular structure for maintainability:
 
 ## 🧑‍💻 Developer Notes
 
-- **Hydra Workflow**: Users commit funds to a Hydra Head on Layer-1, perform off-chain transactions, and close the Head to settle on Layer-1. Hydrano abstracts this process into simple API calls.
-- **Extending Hydrano**: Add custom transaction validators in `src/hydrano/validators/`. Integrate additional blockchain APIs via `src/hydrano/connectors/`.
+- **Hydra Workflow**: Users commit funds to a Hydra Head on Layer-1, perform off-chain transactions, and close the Head to settle on Layer-1. PyHydra abstracts this process into simple API calls.
+- **Extending PyHydra**: Add custom transaction validators in `src/PyHydra/validators/`. Integrate additional blockchain APIs via `src/PyHydra/connectors/`.
 - **Performance**: Hydra supports >1,000 TPS per Head. Benchmark with scripts in `examples/benchmarks/`.
-- **Security**: Hydrano uses Cardano’s contestable commit mechanism to prevent double-spending. Always validate wallet signatures before submitting transactions.
+- **Security**: PyHydra uses Cardano’s contestable commit mechanism to prevent double-spending. Always validate wallet signatures before submitting transactions.
 - **Testing**: Run `pytest` for unit tests. Add new tests in `tests/` for custom features.
 - **Packaging**: The `pyproject.toml` file is configured for modern Python packaging. Update version numbers before building new releases.
 
@@ -248,7 +248,7 @@ For advanced usage, consult the [Hydra RFCs](https://github.com/cardano-scaling/
 
 ## 🤝 Contributing
 
-Contributions are welcome to enhance Hydrano’s functionality, documentation, or performance. To contribute:
+Contributions are welcome to enhance PyHydra’s functionality, documentation, or performance. To contribute:
 
 1. Fork the repository:
    ```bash
@@ -277,7 +277,7 @@ Report bugs or suggest features via GitHub Issues. Join the Cardano community on
 
 ## 📚 Documentation & Resources
 
-- [API Reference](docs/api.md): Detailed documentation of Hydrano’s classes and methods.
+- [API Reference](docs/api.md): Detailed documentation of PyHydra’s classes and methods.
 - [Hydra Setup Guide](docs/hydra-setup.md): Instructions for configuring a Hydra node.
 - Cardano Ecosystem:
   - [Cardano Developer Portal](https://developers.cardano.org/)
