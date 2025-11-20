@@ -1,13 +1,13 @@
 [project]
-name = "hydrano"
+name = "pyhydra"
 version = "0.1.0"
 description = "Lightweight Python toolkit for Cardano Hydra."
 authors = [
     {name = "Nguyen Duy Khanh",email = "nguyenkhanh17112003@gmail.com"}
 ]
 license = "MIT"
-homepage = "https://github.com/independenceee/hydrano"
-repository = "https://github.com/independenceee/hydrano"
+homepage = "https://github.com/independenceee/pyhydra"
+repository = "https://github.com/independenceee/pyhydra"
 readme = "README.md"
 keywords = ["cardano", "hydra", "blockchain", "python", "library"]
 requires-python = ">=3.9.1,<4.0.0"
